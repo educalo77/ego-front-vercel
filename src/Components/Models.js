@@ -45,11 +45,11 @@ function Models() {
 
     return (
         <div>
-        {/* <Row>
+        <Row>
             {models && models.map(item => (
                 <ModelCard key={item.id} data={item} />
             ))}
-        </Row> */}
+        </Row>
         </div>
     )
 }
