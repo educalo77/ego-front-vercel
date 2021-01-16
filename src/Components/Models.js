@@ -45,7 +45,7 @@ function Models() {
 
     return (
         <div>
-            { models !== undefined ? 
+            {models.length !== 0 ? 
                 (<Row>
             {models.map(item => (
                 <ModelCard key={item.id} data={item} />
@@ -53,6 +53,7 @@ function Models() {
         </Row>) : (
             <h2>No hay modelos disponibles</h2>
         )}
+
         </div>
     )
 }
