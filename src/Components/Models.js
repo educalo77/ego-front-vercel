@@ -39,9 +39,9 @@ function Models() {
         }
     },[getAllModels, typeorder, wayorder, models])
 
-    useEffect(() => {
-        dispatch(getOrder())
-    }, []);
+    // useEffect(() => {
+    //     dispatch(getOrder())
+    // }, []);
 
     return (
         <div>
