@@ -8,6 +8,7 @@ export default function ModelCard({ data }) {
 //    const { id, model, img, year, price } = data;
     
     return (
+        <></>
         // <Col lg={3} md={6}>
         //     <Card className="border-0">
         //         <Card.Body className="text-center">
@@ -20,5 +21,5 @@ export default function ModelCard({ data }) {
         //         </Card.Body>
         //     </Card>
         // </Col>
-    );
+    )
 }
