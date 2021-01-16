@@ -46,9 +46,9 @@ function Models() {
     return (
         <div>
         <Row>
-            {models && models.map(item => (
+            {models? ( models.map(item => (
                 <ModelCard key={item.id} data={item} />
-            ))}
+            ))) : (<></>)}
         </Row>
         </div>
     )
