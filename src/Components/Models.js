@@ -45,11 +45,14 @@ function Models() {
 
     return (
         <div>
-        {/* <Row>
-            {models !== undefined ? ( models.map(item => (
+            { models !== undefined ? 
+                (<Row>
+            {models.map(item => (
                 <ModelCard key={item.id} data={item} />
-            ))) : (<></>)}
-        </Row> */}
+            ))}
+        </Row>) : (
+            <h2>No hay modelos disponibles</h2>
+        )}
         </div>
     )
 }
