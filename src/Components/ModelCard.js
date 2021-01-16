@@ -1,11 +1,11 @@
-import CurrencyFormat from 'react-currency-format';
-import { Link } from 'react-router-dom';
+//import CurrencyFormat from 'react-currency-format';
+//import { Link } from 'react-router-dom';
 import React from 'react';
 import {Col, Card} from 'react-bootstrap';
 
 export default function ModelCard({ data }) {
 
-    const { id, model, img, year, price } = data;
+//    const { id, model, img, year, price } = data;
     
     return (
         <Col lg={3} md={6}>
