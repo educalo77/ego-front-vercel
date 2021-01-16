@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import s from '../Styles/home.module.scss';
 import Filters from '../Components/Filters';
-// import Models from '../Components/Models';
+import Models from '../Components/Models';
 
 
 function Home() {
@@ -21,7 +21,7 @@ function Home() {
                     <Filters />
                 </Col>
             </Row>
-            {/* <Models /> */}
+            <Models />
         </Container>
     )
 }
