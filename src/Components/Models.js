@@ -39,21 +39,21 @@ function Models() {
         }
     },[getAllModels, typeorder, wayorder, models])
 
-    // useEffect(() => {
-    //     dispatch(getOrder())
-    // }, []);
+    useEffect(() => {
+        dispatch(getOrder())
+    }, []);
 
     return (
         <div>
-            {models.length !== 0 ? 
+            {/* {models.length !== 0 ? 
                 (<Row>
             {models.map(item => (
                 <ModelCard key={item.id} data={item} />
             ))}
         </Row>) : (
             <h2>No hay modelos disponibles</h2>
-        )}
-
+        )} */}
+            <h2>No hay modelos disponibles</h2>
         </div>
     )
 }
