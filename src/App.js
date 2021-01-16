@@ -14,7 +14,7 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Route exact path="/" component={Home} />
-      {/* <Route exact path="/model/:id?" component={ModelDetail} />  */}
+      <Route exact path="/model/:id?" component={ModelDetail} />
       <Footer />
     </React.Fragment>
   );
