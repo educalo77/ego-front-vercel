@@ -46,7 +46,7 @@ function Models() {
     return (
         <div>
         <Row>
-            {models? ( models.map(item => (
+            {models !== undefined ? ( models.map(item => (
                 <ModelCard key={item.id} data={item} />
             ))) : (<></>)}
         </Row>
