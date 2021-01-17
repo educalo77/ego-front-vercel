@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import {Col} from 'react-bootstrap';
 import s from '../Styles/mainDetail.module.scss';
-import { getAllOther } from '../Store/actions/actions';
+import { getAllOther, getAllOtherTwo } from '../Store/actions/actions';
 import { useSelector, useDispatch } from 'react-redux';
 
 
@@ -25,7 +25,7 @@ function OtherDetails() {
     
      useEffect(()=>{
     (async function(){
-        dispatch(await getAllOther(1, 2))
+        dispatch(await getAllOtherTwo(1, 2))
     })()
   }, [])
     
