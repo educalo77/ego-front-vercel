@@ -56,11 +56,8 @@ function Filters({ orderBy, orderDirection }) {
     }
 
     useEffect(() => {
-        dispatch(getAllAutos())
-        dispatch(getAllSuvs())
-        dispatch(getAllPickups())
         dispatch(getAllModels())
-    }, [getAllAutos, getAllModels, getAllPickups, getAllSuvs])
+    }, [dispatch])
 
     const vehicles = [{name: "Autos"}, {name: "Pickups y Comerciales"}, {name: "SUVs y Crossovers"}]
 
