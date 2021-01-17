@@ -15,6 +15,8 @@ function OtherDetails() {
     const detailsOne = useMemo(() => detallesUno);
     const detailsTwo = useMemo(() => detallesDos);
 
+    console.log(detailsOne, detailsTwo)
+
   useEffect(()=>{
     (async function(){
         dispatch(await getAllOther(1, 1))
