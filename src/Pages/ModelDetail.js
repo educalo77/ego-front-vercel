@@ -6,7 +6,6 @@ import Carousel2 from '../Components/Carousel';
 import OtherDetails from '../Components/OtherDetails';
 import { useDispatch } from "react-redux";
 import { getAllModels } from '../Store/actions/actions';
-import s from '../Styles/modeldetail.module.scss';
 
 function ModelDetail(){
     const { id } = useParams();
