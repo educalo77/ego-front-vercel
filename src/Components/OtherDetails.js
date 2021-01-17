@@ -26,7 +26,7 @@ function OtherDetails() {
         dispatch(await getAllOther(2, 14))
     })()
   }, [])
-    
+    console.log(detailsOne, detailsTwo)
 
     return (
         <div className={s['container']}>
