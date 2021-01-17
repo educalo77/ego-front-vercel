@@ -38,9 +38,7 @@ function Models() {
 
     useEffect(() => {
         dispatch(getAllModels())
-//        dispatch(getOrder())
     }, [getOrder]);
-
 
     return (
         <div>

@@ -3,6 +3,9 @@
     flex-direction: column;
     width: 85%;
     margin: auto;
+        @media (max-width:900px) {
+            width: 95%
+        }
 }
 
 .details-container {
@@ -36,10 +39,20 @@
 .first {
     display: flex;
     align-items: center;
+        @media (max-width:900px) {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
 }
 
 .second {
     display: flex;
     align-items: center;
-    
+            @media (max-width:900px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 }

@@ -28,10 +28,10 @@ function Carousel2(id) {
                             itemsToScroll={1}
                             itemPosition={consts.CENTER}
                             breakPoints={[
-                                { width: 500, itemsToShow: 1.5 },
-                                { width: 600, itemsToShow: 2.5 },
-                                { width: 800, itemsToShow: 3.5 },
-                                { width: 900, itemsToShow: 4.5 },
+                                { width: 500, itemsToShow: 1 },
+                                { width: 600, itemsToShow: 2 },
+                                { width: 800, itemsToShow: 3 },
+                                { width: 900, itemsToShow: 4 },
                             ]}
                         >
                                 {details.map((item, index) => (  
