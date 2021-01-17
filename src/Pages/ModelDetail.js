@@ -6,6 +6,7 @@ import Carousel2 from '../Components/Carousel';
 import OtherDetails from '../Components/OtherDetails';
 import { useDispatch } from "react-redux";
 import { getAllModels } from '../Store/actions/actions';
+import s from '../Styles/modeldetail.module.scss';
 
 function ModelDetail(){
     const { id } = useParams();
@@ -14,16 +15,17 @@ function ModelDetail(){
  
     useEffect(() => {
         dispatch(getAllModels())
-        (window.scrollTo(0,0))()
     }, [dispatch]);
 
     return (
         <React.Fragment>
+            <div className={s['modeldetail']}>
             <Container>
                 <Model id={id} />
             </Container>
             <Carousel2 id={id} />
             <OtherDetails id={id} />
+            </div>
         </React.Fragment>
     )
 }
