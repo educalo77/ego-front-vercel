@@ -17,9 +17,6 @@ function Models() {
     const wayorder = useMemo(() => allsort.b);
 
     const data = useMemo(() => {
-        if (!models) {
-            window.location.reload();
-        }
         if (models) {
         if (typeorder === 'price' && wayorder === 'asc') {
             return models.sort((a, b) => (a.price < b.price) ? -1 : 1)
@@ -37,9 +34,10 @@ function Models() {
             return models
         }  
         }
-    },[getAllModels, typeorder, wayorder, models])
+    },[typeorder, wayorder, models])
 
     useEffect(() => {
+        dispatch(getAllModels())
         dispatch(getOrder())
     }, []);
 
