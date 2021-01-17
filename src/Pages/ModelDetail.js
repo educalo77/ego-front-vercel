@@ -13,8 +13,9 @@ function ModelDetail(){
     const dispatch = useDispatch();
  
     useEffect(() => {
-    dispatch(getAllModels())
-    }, []);
+        dispatch(getAllModels())
+        (window.scrollTo(0,0))()
+    }, [dispatch]);
 
     return (
         <React.Fragment>
