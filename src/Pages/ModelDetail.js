@@ -17,15 +17,19 @@ function ModelDetail(){
         dispatch(getAllModels())
     }, [dispatch]);
 
+    window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth'
+    })
+
     return (
         <React.Fragment>
-            <div className={s['modeldetail']}>
-            <Container>
+            <Container >
                 <Model id={id} />
             </Container>
             <Carousel2 id={id} />
             <OtherDetails id={id} />
-            </div>
         </React.Fragment>
     )
 }
