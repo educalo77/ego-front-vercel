@@ -38,7 +38,7 @@ function Models() {
 
     useEffect(() => {
         dispatch(getAllModels())
-        dispatch(getOrder())
+//        dispatch(getOrder())
     }, [getOrder]);
 
 
