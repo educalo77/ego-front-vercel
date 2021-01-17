@@ -20,7 +20,7 @@ function Navbar(){
     return (
         <React.Fragment>
             <nav className={s['navbar-ego'] + ' sticky-top bg-white'}>
-                <Link to="/models/" className={s['navbar-ego-brand']}>
+                <Link to="/" className={s['navbar-ego-brand']}>
                 <img src="/img/logo.png" alt="Ego - logo" />
                 </Link>
                 <Container className="mt-auto">
