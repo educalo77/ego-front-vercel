@@ -7,16 +7,9 @@ const getAllModels = () => async (dispatch) => {
     dispatch({type: GET_MODELS, payload: data})
 }
 
-const getAllOther = () => async (dispatch) => {
-    const { data } = await Axios.get(`${process.env.REACT_APP_API}/otherdetails/1/1`);
-    const { data2 } = await Axios.get(`${process.env.REACT_APP_API}/otherdetails/1/2`);
-    dispatch({ type: GET_OTHER, payload: data })  
-    dispatch({ type: GET_OTHER2, payload: data2 })  
-}
-
-const getAllOtherTwo = (carId, id) => async (dispatch) => {
+const getAllOther = (carId, id) => async (dispatch) => {
         const { data } = await Axios.get(`${process.env.REACT_APP_API}/otherdetails/` + carId + '/' + id);
-    dispatch({ type: GET_OTHER2, payload: data })
+    id === 1 ? (dispatch({ type: GET_OTHER, payload: data })) : (dispatch({ type: GET_OTHER2, payload: data }) )   
 }
 
 const getOneModel = (id) => async (dispatch) => {
@@ -45,5 +38,5 @@ const getOrder = (a,b) => (dispatch) => {
 }
 
 
-export { getAllModels, getAllOther, getAllOtherTwo, getOneModel, getAllAutos, getAllPickups, getAllSuvs, getOrder };
+export { getAllModels, getAllOther, getOneModel, getAllAutos, getAllPickups, getAllSuvs, getOrder };
 
