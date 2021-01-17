@@ -15,7 +15,7 @@ function OtherDetails() {
     const detailsOne = useMemo(() => detallesUno);
     const detailsTwo = useMemo(() => detallesDos);
 
-    console.log(detailsOne, detailsTwo)
+    console.log(detailsOne, detailsTwo, detallesDos)
 
   useEffect(()=>{
     (async function(){
