@@ -17,7 +17,7 @@ function OtherDetails() {
 
   useEffect(()=>{
     (async function(){
-        dispatch(await getAllOther(3, 3))
+        dispatch(await getAllOther(1, 1))
     })()
   }, [])
     
