@@ -77,7 +77,7 @@ function CustomPagination() {
 }
 
 function myArrow({ type, onClick, isEdge }) {
-    const pointer = type === consts.PREV ? (<img className="arrow-img" src="/ego/img/arrow-left.svg" alt=""/>) : (<img className="arrow-img" src="/ego/img/arrow-right.svg" alt=""/>)
+    const pointer = type === consts.PREV ? (<img className="arrow-img" src="/img/arrow-left.svg" alt=""/>) : (<img className="arrow-img" src="/img/arrow-right.svg" alt=""/>)
     return (
         <div className={s['arrow-container']} onClick={onClick} disabled={isEdge}>
             {pointer}
