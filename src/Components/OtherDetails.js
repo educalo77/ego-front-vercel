@@ -17,13 +17,13 @@ function OtherDetails() {
 
   useEffect(()=>{
     (async function(){
-        dispatch(await getAllOther(1, 1))
+        dispatch(await getAllOther(2, 2))
     })()
   }, [])
     
      useEffect(()=>{
     (async function(){
-        dispatch(await getAllOther(1, 13))
+        dispatch(await getAllOther(2, 14))
     })()
   }, [])
     
