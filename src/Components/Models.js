@@ -47,13 +47,12 @@ function Models() {
         <div>
              {models && (models.length !== 0) ? 
                 (<Row>
-            {/* {models.map(item => (
+            {models.map(item => (
                 <ModelCard key={item.id} data={item} />
-            ))} */}
+            ))}
         </Row>) : (
             <h2>No hay modelos disponibles</h2>
         )} 
-            <h2>No hay modelos disponibles</h2>
         </div>
     )
 }
