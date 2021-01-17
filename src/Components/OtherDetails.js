@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import {Col} from 'react-bootstrap';
 import s from '../Styles/mainDetail.module.scss';
-import { getAllOther, getAllOtherTwo } from '../Store/actions/actions';
+import { getAllOther } from '../Store/actions/actions';
 import { useSelector, useDispatch } from 'react-redux';
 
 
@@ -15,12 +15,11 @@ function OtherDetails() {
     const detailsOne = useMemo(() => detallesUno);
     const detailsTwo = useMemo(() => detallesDos);
 
-    console.log(detailsOne, detailsTwo, detallesDos)
+    console.log(detailsOne, detailsTwo)
 
   useEffect(()=>{
     (async function(){
-        dispatch(await getAllOther(1, 1))
-        dispatch(await getAllOtherTwo(1, 2))
+        dispatch(await getAllOther())
     })()
   }, [])
     
