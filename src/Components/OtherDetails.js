@@ -20,14 +20,15 @@ function OtherDetails() {
   useEffect(()=>{
     (async function(){
         dispatch(await getAllOther(1, 1))
-    })()
-  }, [])
-    
-     useEffect(()=>{
-    (async function(){
         dispatch(await getAllOtherTwo(1, 2))
     })()
   }, [])
+    
+//      useEffect(()=>{
+//     (async function(){
+//         dispatch(await getAllOtherTwo(1, 2))
+//     })()
+//   }, [])
     
 
     return (
