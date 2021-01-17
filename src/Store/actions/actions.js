@@ -18,17 +18,17 @@ const getOneModel = (id) => async (dispatch) => {
 }
 
 const getAllAutos = () => async (dispatch) => {
-    const { data } = await Axios.post(`${process.env.REACT_APP_API}/models/autos`);
+    const { data } = await Axios.post(`${process.env.REACT_APP_API}/models/Autos`);
     dispatch({type: GET_MODELS, payload: data})
 }
 
 const getAllPickups = () => async (dispatch) => {
-    const { data } = await Axios.post(`${process.env.REACT_APP_API}/models/pickups`);
+    const { data } = await Axios.post(`${process.env.REACT_APP_API}/models/Pickups y Comerciales`);
     dispatch({type: GET_MODELS, payload: data})
 }
 
 const getAllSuvs = () => async (dispatch) => {
-    const { data } = await Axios.post(`${process.env.REACT_APP_API}/models/suvs`);
+    const { data } = await Axios.post(`${process.env.REACT_APP_API}/models/SUVs y Crossovers`);
     dispatch({type: GET_MODELS, payload: data})
 }
 
